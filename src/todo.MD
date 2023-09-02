@@ -6,3 +6,6 @@ specifications:
 - Create a timer component to keep track of time
 - Create buttons to play, pause and reset timer
 - create a footer for author.
+
+completed:
+- add buttons to display play, pause, and reset timer
