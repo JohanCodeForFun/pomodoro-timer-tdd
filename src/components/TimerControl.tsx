@@ -1,10 +1,14 @@
+import { useState } from 'react'
 import Button from './Button'
 
 const TimerControl = () => {
+  const [timerStatus, setTimerStatus] = useState("Click to Start")
+
+
   return (
     <div>
-      <Button title="play"/>
-      <Button title="reset"/>
+      <Button timerStatus={timerStatus} setTimerStatus={setTimerStatus}/>
+      <Button title="Reset Timer"/>
     </div>
   )
 }
