@@ -4,8 +4,11 @@ import Header from '../components/Header';
 
 describe('Tests for Header component', () => {
   
-  it('renders Header', () => {
+  it('renders component with header', () => {
     render(<Header />);
 
-  })
-})
+    screen.getByRole('heading', {
+      name: "Header 2023"
+    })
+  });
+});
